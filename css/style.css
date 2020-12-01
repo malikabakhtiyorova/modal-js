@@ -1,0 +1,79 @@
+.task-heading {
+  font-size: 55px;
+  opacity: 0.5;
+
+}
+
+.remove-button {
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.task-list-item:hover .remove-button {
+  opacity: 1;
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal-screen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-dialog {
+  background-color: #fff;
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.modal-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.modal-body {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 100px;
+}
+
+.modal-footer {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.btn-active:active,
+.btn-active:focus,
+.btn-active:hover {
+  border: 1px solid #777;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}
+
+.modal-open {
+  display: block;
+}
+
+.modal-cl {
+  display: none;
+}
